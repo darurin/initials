@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darlene Serrano Orijuela</title>
+</head>
+<style>
+    #canvas{
+        border: 2px solid black
+    }
+</style>
+<body>
+    <canvas id="canvas" width="1080" height="720">
+        <script>
+            var canvas = document.getElementById('canvas');
+            var line = canvas.getContext('2d');
+            line.lineWidth = 5.0;
+            line.strokeStyle = 'black';
+            line.beginPath(); <!-- D -->
+            line.moveTo(50, 50);
+            line.lineTo(50, 400);
+            line.moveTo(45, 50);
+            line.lineTo(45, 400);
+            line.lineTo(200, 200);
+            line.lineTo(50, 50);
+            line.stroke();
+            line.beginPath(); <!-- S -->
+            line.moveTo(500, 50);
+            line.lineTo(350, 50);
+            line.lineTo(350, 200);
+            line.lineTo(500, 200);
+            line.lineTo(500, 400);
+            line.lineTo(350, 400);
+            line.moveTo(345, 50);
+            line.lineTo(345, 200);
+            line.stroke();
+            line.beginPath() <!-- O -->
+            line.moveTo(900, 50);
+            line.lineTo(700, 50);
+            line.lineTo(700, 400);
+            line.lineTo(900, 400);
+            line.lineTo(900, 50);
+            line.moveTo(695, 50);
+            line.lineTo(695, 400);
+            line.stroke()
+        </script>
+    </canvas>
+</body>
+</html>
